@@ -1,1 +1,1 @@
-![image](https://github.com/OG93-COM/META-FrontEnd-Developer/assets/132763749/af906b43-6a2a-4955-9216-ce9cb2169d65)
+![Meta](https://github.com/OG93-COM/META-FrontEnd-Developer/assets/132763749/301ccca5-7b00-4a5b-a6cb-da19c1b4907c)
