@@ -24,7 +24,7 @@ function App() {
  
   function divide(e) { 
     e.preventDefault(); 
-    if (inputRef.current.value !=''){
+    if (inputRef.current.value !=0){
       setResult((result) => result / Number(inputRef.current.value)); 
     }
     
@@ -32,7 +32,7 @@ function App() {
  
   function resetInput(e) { 
     e.preventDefault();
-    inputRef.current.value = '';
+    inputRef.current.value = 0;
   }; 
  
   function resetResult(e) { 
