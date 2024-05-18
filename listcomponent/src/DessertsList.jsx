@@ -10,7 +10,6 @@ function DessertsList(props) {
       return <li key={idx}>{dessert.name} - {dessert.calories} cal</li>
     })
 
-
     return (
       <ul>
         {dessertsItems}
