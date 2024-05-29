@@ -5,8 +5,11 @@ function App() {
   const [user, setUser] = useState([])
 
   const fetchData = () => {
-    fetch('https://randomuser.me/api/?results=1')
-    .then(res => res.json())
+    fetch('https://randomuser.me/api/?results=2')
+    .then(res => {
+      if (!res.ok) throw new Error(`My Error : ${res.status} - ${res.statusText}`)
+      return res.json()
+    })
     .then(data => {
       setUser(data);
       console.log(data)
