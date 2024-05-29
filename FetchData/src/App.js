@@ -23,9 +23,8 @@ function App() {
     <div style={{padding: "40px"}}>
       <h1>Customer data</h1>
       <img src={user.results[0].picture.medium} style={{borderRadius:"50%" , border:"2px solid grey"}} alt={user.results[0].gender + " Picture"}/>
-      <p>{user.results[0].name.first}</p>
-      <p>{user.results[0].name.last}</p>
-      <p>{user.results[0].email}</p>
+      <p>Full Name: <span style={{fontWeight:"600"}}>{user.results[0].name.first} {user.results[0].name.last}</span> </p>
+      <p>Email: <span style={{fontWeight:"600"}}>{user.results[0].email}</span></p>
       
     </div>
   ) : (
