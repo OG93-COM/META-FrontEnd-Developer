@@ -1,7 +1,7 @@
 
 const MenuItems = ({menuImg, menuTitle, menuPrice, menuCtn}) => {
   return (
-    <div className="w-[337px] h-[450px] bg-[#EEF4F2] rounded-xl hover:shadow-lg">
+    <div className="w-[337px] h-[450px] bg-[#EEF4F2] rounded-xl hover:shadow-lg duration-300">
             <img src={menuImg} className='h-[213px] w-[337px] rounded-t-xl mb-4'/>
             <div className='px-5'>
                 <div className='flex justify-between px-4 mb-3 '>

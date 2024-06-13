@@ -29,7 +29,7 @@ const Main = () => {
     <main className='mt-14'>
         <div className='flex justify-center items-center'>
             <h1 className='font-semiblod text-3xl mx-auto'>Special</h1>
-            <button className='bg-[#f9d316] text-slate-900 py-2 px-4 rounded font-semibold mx-auto hover:bg-[#ffe253]'>Online Menu</button>
+            <button className='bg-[#f9d316] text-slate-900 py-2 px-4 rounded font-semibold mx-auto hover:bg-[#ffe100] duration-300'>Online Menu</button>
         </div>
       
       <section className='flex justify-center items-center mt-5 gap-5 flex-wrap	'>

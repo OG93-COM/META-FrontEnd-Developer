@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 const Header = () => {
   return (
@@ -6,10 +7,15 @@ const Header = () => {
             <h1 className='text-[#C3A50F] text-4xl font-bold px-2'>Little Lemon</h1>
             <p className='px-4 font-light text-slate-300'>Chicago</p>
             <p className='p-2 max-w-[500px]'>Welcome to Little Lemon, Chicago's cozy haven for fresh, delicious cuisine. Experience a delightful blend of flavors in a warm, inviting atmosphere. Perfect for every occasion!</p>
-            <button className='bg-[#f9d316] text-slate-900 py-2 px-4 rounded m-3 font-semibold hover:bg-[#ffe253]'>Reserve a Table</button>
+            <Link to={"/booking"}>
+            <button
+            className='bg-[#f9d316] text-slate-900 py-2 px-4 rounded m-3 font-semibold hover:bg-[#ffe100] duration-300'>
+                Reserve a Table
+            </button>
+            </Link>
         </div>
         <div className='mr-auto p-3'>
-            <img src="assets/restauranfood.jpg" className='w-[200px]  mt-14 '/>
+            <img src="assets/restauranfood.jpg" className='w-[200px] mt-16 shadow-neutral-600/80 shadow-2xl'/>
         </div>
 
     </header>
