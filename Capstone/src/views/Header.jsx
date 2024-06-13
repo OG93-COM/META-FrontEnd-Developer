@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import CallToActionBtn from "../components/CallToActionBtn"
 
 const Header = () => {
   return (
@@ -8,10 +9,7 @@ const Header = () => {
             <p className='px-4 font-light text-slate-300'>Chicago</p>
             <p className='p-2 max-w-[500px]'>Welcome to Little Lemon, Chicago's cozy haven for fresh, delicious cuisine. Experience a delightful blend of flavors in a warm, inviting atmosphere. Perfect for every occasion!</p>
             <Link to={"/booking"}>
-            <button
-            className='bg-[#f9d316] text-slate-900 py-2 px-4 rounded m-3 font-semibold hover:bg-[#ffe100] duration-300'>
-                Reserve a Table
-            </button>
+            <CallToActionBtn textBtn="Reserve a Table"/>
             </Link>
         </div>
         <div className='mr-auto p-3'>
