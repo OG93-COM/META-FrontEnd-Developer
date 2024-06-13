@@ -1,11 +1,11 @@
 import React from 'react'
-import logo from '../assets/Logo.svg'
+
 
 const Nav = () => {
   return (
     <nav className='flex items-center justify-center text-slate-900 p-3'>
         <div className='flex justify-center items-center w-1/2'>
-            <img src={logo} alt='Logo'/>
+            <img src="assets/Logo.svg" alt='Logo'/>
         </div>
         <div className='flex items-center w-1/2'>
             <ul className='flex items-center gap-6 '>
