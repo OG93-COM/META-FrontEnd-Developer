@@ -1,10 +1,20 @@
-import './App.css';
+
+import Footer from './views/Footer';
+import Header from './views/Header';
+import Main from './views/Main';
+import Nav from './views/Nav';
+
+
 
 function App() {
   return (
-    <div className="App">
-      Front-End Developer Capstone
-    </div>
+    <>
+      <Nav/>
+      <Header/>
+      <Main/>
+      <Footer/>
+    </>
+
   );
 }
 
