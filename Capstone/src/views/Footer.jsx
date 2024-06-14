@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className='grid grid-cols-3  flex-wrap justify-center items-center mx-auto mt-10 bg-[#495F58] text-slate-100 w-full h-[180px]'>
         <div className="w-[60px] mx-auto">
-        <Link to={"/"}> <img src="assets/logo-footer.png" /></Link>
+        <Link to={"/"}> <img src="assets/logo-footer.png" alt="logo"/></Link>
         </div>
         <div className="mx-auto">
             <p className="font-bold my-2">Navigation</p>

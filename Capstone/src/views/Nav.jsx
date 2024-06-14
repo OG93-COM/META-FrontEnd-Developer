@@ -16,7 +16,7 @@ const Nav = () => {
             <img
             onClick={toggleMenu}
             src={!isOpen ? "assets/icon_hamburgermenu.svg" : "assets/icon_hamburgermenuClose.svg"}
-            className='w-9 mx-2 cursor-pointer md:hidden block '/>
+            className='w-9 mx-2 cursor-pointer md:hidden block ' alt='HamburgerMenu'/>
 
         </div>
         <div className='md:flex md:items-center w-1/2'>
