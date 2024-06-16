@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 
+const availableTimes = ["17:00","18:00","19:00","20:00","21:00","22:00"]
+
 const BookingForm = () => {
     const [bookDate, setBookDate] = useState('');
-    const [bookTime, setBookTime] = useState('');
+    const [bookTime, setBookTime] = useState(availableTimes[0]);
     const [numberGuest, setNumberGuest] = useState(0);
     const [occasion, setOccasion] = useState('');
 
@@ -21,25 +23,20 @@ const BookingForm = () => {
         <input
         onChange={e => setBookDate(e.target.value)}
         className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' 
-        type="date" id="res-date"/>
-        
+        type="date" id="res-date" required/>
         <label className='block text-gray-700 text-sm font-bold' htmlFor="res-time">Choose time</label>
         <select
         onChange={e => setBookTime(e.target.value)}
         className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" 
-        id="res-time ">
-            <option>17:00</option>
-            <option>18:00</option>
-            <option>19:00</option>
-            <option>20:00</option>
-            <option>21:00</option>
-            <option>22:00</option>
+        id="res-time" required>
+            {availableTimes.map((avTime, idx) => (<option key={idx}>{avTime}</option>)  )}
+            
         </select>
         <label className='block text-gray-700 text-sm font-bold' htmlFor="guests">Number of guests</label>
         <input
         onChange={e => setNumberGuest(e.target.value)}
         className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
-         type="number" placeholder="1" min="1" max="10" id="guests"/>
+         type="number" placeholder="1" min="1" max="10" id="guests" value={numberGuest}/>
         <label className='block text-gray-700 text-sm font-bold' htmlFor="occasion">Occasion</label>
         <select
         onChange={e => setOccasion(e.target.value)}
