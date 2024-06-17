@@ -1,12 +1,18 @@
 import React, { useState } from 'react'
 
-const availableTimes = ["17:00","18:00","19:00","20:00","21:00","22:00"]
+// const availableTimes = ["17:00","18:00","19:00","20:00","21:00","22:00"]
 
-const BookingForm = () => {
+const BookingForm = ({ availableTimes, dispatch }) => {
     const [bookDate, setBookDate] = useState('');
-    const [bookTime, setBookTime] = useState(availableTimes[0]);
+    const [bookTime, setBookTime] = useState('');
     const [numberGuest, setNumberGuest] = useState(0);
     const [occasion, setOccasion] = useState('');
+
+    const handleDateChange = (e) => {
+        const newDate = e.target.value;
+        setBookDate(newDate);
+        dispatch({ type: 'UPDATE_TIMES', payload: newDate });
+      };
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -21,7 +27,7 @@ const BookingForm = () => {
     className='grid justify-center items-center w-full mx-auto gap-5 py-10 bg-slate-50 shadow-md' >
         <label className='block text-gray-700 text-sm font-bold w-[450px]' htmlFor="res-date">Choose date</label>
         <input
-        onChange={e => setBookDate(e.target.value)}
+        onChange={handleDateChange}
         className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' 
         type="date" id="res-date" required/>
         <label className='block text-gray-700 text-sm font-bold' htmlFor="res-time">Choose time</label>
