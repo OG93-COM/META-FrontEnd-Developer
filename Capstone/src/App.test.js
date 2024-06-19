@@ -8,7 +8,6 @@ test('renders learn react link', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-
 describe("Booking Form", () => {
   test('Renders the BookingForm heading', () => {
 
