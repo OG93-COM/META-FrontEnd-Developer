@@ -9,17 +9,14 @@ const BookingForm = ({ availableTimes, dispatch }) => {
     const [occasion, setOccasion] = useState('');
     const [isBookingSuccess, setIsBookingSuccess] = useState('')
 
-    const getIsFormValid = () => { 
-        return ( 
-            (bookDate != '') && 
-            (bookTime != '') && 
-            (numberGuest != 0) && 
-            (occasion != '') 
-        ); 
-      }; 
-      
-
-
+    const getIsFormValid = () => {
+        return (
+            (bookDate != '') &&
+            (bookTime != '') &&
+            (numberGuest != 0) &&
+            (occasion != '')
+        );
+      };
 
     const handleDateChange = (e) => {
         const newDate = e.target.value;
