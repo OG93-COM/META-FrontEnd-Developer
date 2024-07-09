@@ -26,7 +26,7 @@ const Nav = () => {
             </ul>
             {isOpen &&
                 <ul
-                className='md:hidden w-full bg-[#fff] py-4'>
+                className='md:hidden w-full bg-[#fff] py-4 '>
                     <MenuItemsText/>
                 </ul>
             }

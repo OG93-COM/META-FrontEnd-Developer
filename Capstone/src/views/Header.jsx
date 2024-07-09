@@ -13,7 +13,7 @@ const Header = () => {
             </Link>
         </div>
         <div className='mr-auto p-3'>
-            <img src="assets/restauranfood.jpg" className='w-[200px] mt-16 shadow-neutral-600/80 shadow-2xl' alt="HeaderImg"/>
+            <img src="assets/restauranfood.jpg" className='w-[200px] rounded mt-16 shadow-neutral-600/80 shadow-2xl' alt="HeaderImg"/>
         </div>
 
     </header>
