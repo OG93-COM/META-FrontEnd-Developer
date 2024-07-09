@@ -9,7 +9,7 @@ const MenuItems = ({menuImg, menuTitle, menuPrice, menuCtn}) => {
                     <span className='font-semibold text-l text-[#FF8025]'>{menuPrice}</span>
                 </div>
                 <p className='my-5'>{menuCtn}</p>
-                <a href='#' className='px-5 font-semibold'>Order a Delivery</a>
+                <a href='#' className='px-5 font-semibold hover:text-green-900'>Order a Delivery</a>
             </div>
         </div>
   )
