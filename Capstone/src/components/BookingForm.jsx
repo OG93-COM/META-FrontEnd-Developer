@@ -45,7 +45,7 @@ const BookingForm = ({ availableTimes, dispatch }) => {
         <input
         onChange={handleDateChange}
         className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' 
-        type="date" id="res-date" required/>
+        type="date"  required/>
         <label className='block text-gray-700 text-sm font-bold' htmlFor="res-time">Choose time</label>
         <select
         onChange={e => setBookTime(e.target.value)}
