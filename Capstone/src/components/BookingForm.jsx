@@ -48,13 +48,13 @@ const BookingForm = ({ availableTimes, dispatch }) => {
           <label className='block text-gray-700 text-sm font-bold w-[450px]' htmlFor="res-date">Choose date</label>
           <input
           onChange={handleDateChange}
-          className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' 
+          className='shadow appearance-none border rounded focus:border-green-800 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' 
           type="date"  required/>
             {/* {errors.email && touched.email && errors.email} */}
           <label className='block text-gray-700 text-sm font-bold' htmlFor="res-time">Choose time</label>
           <select
           onChange={e => setBookTime(e.target.value)}
-          className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" 
+          className="block appearance-none w-full bg-white border border-gray-400 focus:border-green-800 hover:border-green-800 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" 
           id="res-time" required>
               {availableTimes.map((avTime, idx) => (<option key={idx}>{avTime}</option>)  )}
           </select>
@@ -62,7 +62,7 @@ const BookingForm = ({ availableTimes, dispatch }) => {
           <label className='block text-gray-700 text-sm font-bold' htmlFor="guests">Number of guests</label>
           <input
           onChange={e => setNumberGuest(e.target.value)}
-          className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+          className='shadow appearance-none border rounded w-full py-2 px-3 focus:border-green-500 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
           type="number" placeholder="1" min="1" max="10" id="guests" value={numberGuest}/>
           <label className='block text-gray-700 text-sm font-bold' htmlFor="occasion">Occasion</label>
           <select
