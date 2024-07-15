@@ -84,7 +84,6 @@ const BookingForm = ({ availableTimes, dispatch }) => {
 
     </>
 
-
   )
 }
 
